@@ -13,7 +13,7 @@ it's basically the same as the [original](https://archlinux.org/packages/communi
 `python3 -m venv venv && source venv/bin/activate`
 
 2. install requirements<br>
-`pip3 -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 3. apply patches<br>
 on linux/osx: `./patch-py3.sh`<br>
