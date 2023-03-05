@@ -30,7 +30,7 @@ dingus@bingus:~$ python3 arch-wiki-docs.py --output-directory wiki --lang en
 ```
 
 ## issues
-Language selection is kinda broken.<br>
+Language selection only works for English<br>
 so this will not work:
 
 ```console
