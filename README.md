@@ -41,6 +41,8 @@ if you want any other language, you need to edit the file `Arch-Wiki/ArchWiki.py
 
 so for German, that would mean changing `local_language` to `"Deutsch"`
 
+then you can run the script with the `--lang [country_code]` argument where country_code is the [ISO3166-1 Alpha-2-Code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
+
 ## TODO
 maybe fix language selection<br>
 priority: -2
