@@ -23,7 +23,7 @@ on windows: move the simplemediawiki.py to `venv/lib/python3.X/site-packages/`
 `python3 arch-wiki-docs.py --output-directory wiki`
 
 ## language selection
-to download English language run:
+to download the wiki in **English only** run:
 
 ```console
 dingus@bingus:~$ python3 arch-wiki-docs.py --output-directory wiki --lang en
