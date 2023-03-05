@@ -9,17 +9,17 @@ it's basically the same as the [original](https://archlinux.org/packages/communi
 0. download and cd<br>
 `git clone https://github.com/verbuggt/arch-wiki-docs-py3.git && cd arch-wiki-docs-py3`
 
-1. create virtual python environment<br>
+1. create virtual python environment and source into it<br>
 `python3 -m venv venv && source venv/bin/activate`
 
 2. install requirements<br>
 `pip3 install -r requirements.txt`
 
 3. apply patches<br>
-on linux/osx: `cp simplemediawiki.py venv/lib/python*/site-packages/`<br>
+on Linux/OSX: `cp simplemediawiki.py venv/lib/python*/site-packages/`<br>
 on windows: move the simplemediawiki.py to `venv/lib/python3.X/site-packages/`
 
-4. run the thing (all languages - for specific language see below)<br>
+4. start downloading (all languages - for specific language see below)<br>
 `python3 arch-wiki-docs.py --output-directory wiki`
 
 ## language selection
@@ -28,6 +28,11 @@ to download the wiki in **English only** run:
 ```console
 dingus@bingus:~$ python3 arch-wiki-docs.py --output-directory wiki --lang en
 ```
+
+## update
+to update your copy of the wiki, just run the same command used for downloading again. changed files will be downloaded, unchanged files will be skipped
+
+you may wish to [automate this](https://wiki.archlinux.org/title/cron)
 
 ## issues
 Language selection only works for English<br>
@@ -40,6 +45,8 @@ dingus@bingus:~$ python3 arch-wiki-docs.py --output-directory wiki --lang de
 if you want any other language, you need to edit the file `Arch-Wiki/ArchWiki.py` and change `local_language` (line 16) to your desired language (locale name)
 
 so for German, that would mean changing `local_language` to `"Deutsch"`
+
+then you can run the script with `--lang [country_code]` where `country_code` is the [ISO3166-1 Alpha-2-Code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 
 ## TODO
 maybe fix language selection<br>
