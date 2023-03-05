@@ -16,7 +16,7 @@ it's basically the same as the [original](https://archlinux.org/packages/communi
 `pip3 install -r requirements.txt`
 
 3. apply patches<br>
-on linux/osx: `./patch-py3.sh`<br>
+on linux/osx: `cp simplemediawiki.py venv/lib/python*/site-packages/`<br>
 on windows: move the simplemediawiki.py to `venv/lib/python3.X/site-packages/`
 
 4. run the thing (all languages - for specific language see below)<br>
