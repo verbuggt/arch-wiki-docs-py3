@@ -13,7 +13,7 @@ from simplemediawiki import MediaWiki
 __all__ = ["ArchWiki"]
 
 url = "https://wiki.archlinux.org/api.php"
-local_language = "Deutsch"
+local_language = "English"
 language_names = {
     "العربية": {"subtag": "ar", "english": "Arabic"},
     "Bosanski": {"subtag": "bs", "english": "Bosnian"},
